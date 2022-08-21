@@ -16,7 +16,7 @@ export class Table3Component implements OnInit {
   constructor(private api :ApiService ){     }
 
   ngOnInit(): void {
-    this.api.getcon().subscribe((res)=>{
+    this.api.getconall().subscribe((res)=>{
       this.studentData=res;
       console.log(this.studentData);
     });
